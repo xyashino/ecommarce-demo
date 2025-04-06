@@ -29,7 +29,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={cn(geistSans.variable, geistMono.variable, "antialiased")}
+        className={cn(geistSans.variable, geistMono.variable, "antialiased max-w-screen overflow-x-hidden relative")}
       >
          <ThemeProvider
             attribute="class"
@@ -37,7 +37,7 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {children} 
+            {children}
           </ThemeProvider>
       </body>
     </html>
